@@ -1,0 +1,151 @@
+body {
+    background-color: #2f4f4f;
+    color: black;
+    transition: 0.3s;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #2f4f4f;
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(to right, #8de0b3, #a7f3d0, #a7f3d0, #bbf7d0);
+    background-clip: text;
+    -webkit-text-clip: text;
+    color: transparent;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(to right, #8de0b3, #a7f3d0, #a7f3d0, #bbf7d0);
+    background-clip: text;
+    -webkit-text-clip: text;
+    color: transparent;
+}
+
+.linha-degrade {
+    height: 3px;
+    background: linear-gradient(to right, #4f8f8b, #6bbf9b, #8de0b3, #a7f3d0);
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ADEBB3;
+    border-radius: 34px;
+    width: 100%;
+    height: 100%;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked+.slider:before {
+    transform: translateX(36px);
+}
+
+.icon {
+    position: absolute;
+    top: 8px;
+    font-size: 16px;
+    color: black;
+}
+
+.moon {
+    left: 10px;
+}
+
+.sun {
+    right: 10px;
+}
+
+.foto-border {
+    width: 25%;
+    padding: 3px;
+    background: #a7f3d0;
+    border-radius: 8px;
+    margin: 30px;
+}
+
+.fotoMenu {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.footer{
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+.aparecer {
+    animation: aparecer 1s ease forwards;
+}
