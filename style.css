@@ -21,7 +21,7 @@ body {
 .logo {
     font-size: 40px;
     font-weight: bold;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #8de0b3, #a7f3d0, #a7f3d0, #bbf7d0);
     background-clip: text;
     -webkit-text-clip: text;
@@ -42,7 +42,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #8de0b3, #a7f3d0, #a7f3d0, #bbf7d0);
     background-clip: text;
     -webkit-text-clip: text;
@@ -51,7 +51,7 @@ body {
 
 .linha-degrade {
     height: 3px;
-    background: linear-gradient(to right, #4f8f8b, #6bbf9b, #8de0b3, #a7f3d0);
+    background: linear-gradient(to right, #6bbf9b, #8de0b3, #a7f3d0);
 }
 
 .light-mode {
@@ -112,12 +112,21 @@ input:checked+.slider:before {
     right: 10px;
 }
 
+.secao {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
 .foto-border {
-    width: 25%;
+    width: 32%;
     padding: 3px;
     background: #a7f3d0;
     border-radius: 8px;
-    margin: 30px;
+    margin: 110px;
+    margin-left: 150px;
 }
 
 .fotoMenu {
@@ -127,8 +136,16 @@ input:checked+.slider:before {
     border-radius: 8px;
 }
 
+.texto {
+    color: #a7f3d0;
+    margin-top: 100px;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .footer{
     background-color: #2f4f4f;
+    font-family: 'Poppins', sans-serif;
     color: white;
     text-align: center;
     padding: 20px;
