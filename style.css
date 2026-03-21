@@ -120,19 +120,15 @@ input:checked+.slider:before {
     margin-top: 20px;
 }
 
-.foto-border {
-    width: 30%;
-    padding: 3px;
+.foto {
+    width: 510px;
+    height: 510px;
+    object-fit: cover;
     border-radius: 50%;
+    padding: 3px;
+    border-radius: 70%;
     margin: 110px;
     margin-left: 200px;
-}
-
-.fotoMenu {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 50%;
 }
 
 .texto {
