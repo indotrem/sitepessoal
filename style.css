@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    z-index: 100;
 }
 
 .logo {
@@ -120,6 +121,20 @@ input:checked+.slider:before {
     margin-top: 20px;
 }
 
+.secao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, #1D9E75 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .foto {
     width: 510px;
     height: 510px;
@@ -181,3 +196,4 @@ input:checked+.slider:before {
 .aparecer {
     animation: aparecer 1s ease forwards;
 }
+
