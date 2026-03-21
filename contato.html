@@ -10,7 +10,7 @@
     <title>Ícaro Coelho - Contato</title>
 </head>
 
-<body>
+<body class="body-contato">
 
     <nav class="navbar">
 
@@ -41,6 +41,33 @@
     </nav>
 
     <div class="linha-degrade"></div>
+
+    <div class="container-form aparecer">
+        <h2 class="text-form">Entre em contato</h2>
+
+        <div class="linha">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Seu nome" />
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="tel" placeholder="Seu telefone" />
+            </div>
+        </div>
+
+        <div class="campo-grande">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Seu@email.com" />
+        </div>
+
+        <div class="campo-grande">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+
+        <button type="button">Enviar Mensagem</button>
+    </div>
 
 </body>
 
