@@ -252,8 +252,7 @@ input:checked+.slider:before {
     margin-bottom: 16px;
 }
 
-.campo,
-.campo-grande {
+.campo, .campo-grande {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -269,8 +268,7 @@ input:checked+.slider:before {
     text-transform: uppercase;
 }
 
-.container-form input,
-.container-form textarea {
+.container-form input, .container-form textarea {
     background: rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(110, 231, 183, 0.2);
     border-radius: 8px;
@@ -283,13 +281,11 @@ input:checked+.slider:before {
     width: 100%;
 }
 
-.container-form input::placeholder,
-.container-form textarea::placeholder {
+.container-form input::placeholder, .container-form textarea::placeholder {
     color: rgba(110, 231, 183, 0.35);
 }
 
-.container-form input:focus,
-.container-form textarea:focus {
+.container-form input:focus, .container-form textarea:focus {
     border-color: #6ee7b7;
     background: rgba(0, 0, 0, 0.35);
 }
@@ -322,4 +318,56 @@ input:checked+.slider:before {
 
 .container-form button:active {
     transform: scale(0.98);
+}
+
+.container-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -650px;
+    margin-left: auto;
+    margin-right: 500px;
+    width: fit-content;
+}
+
+.btt-wpp, .btt-instagram{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+    padding: 40px 125px;
+    width: 380px;
+    background: #2a4a47;
+    border: 1px solid rgba(100, 220, 180, 0.15);
+    border-radius: 50px;
+    color: #6ee7b7;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btt-email {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+    padding: 40px 140px;
+    width: 380px;
+    background: #2a4a47;
+    border: 1px solid rgba(100, 220, 180, 0.15);
+    border-radius: 50px;
+    color: #6ee7b7;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btt-wpp:hover, .btt-instagram:hover, .btt-email:hover {
+    background: #1D9E75;
 }
