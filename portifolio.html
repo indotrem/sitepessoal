@@ -42,19 +42,60 @@
 
     <div class="linha-degrade"></div>
 
-    <div class="video-wrapper">
-        <video id="video-small" src="./videos/starbucks.mp4" controls></video>
-        <button class="expand-btn" onclick="abrirLightbox()">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6ee7b7" stroke-width="2.5">
-                <path
-                    d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-            </svg>
-            ampliar
-        </button>
-    </div>
+    <div class="videos-port">
+        <div class="video-pqn-st aparecer">
+            <video id="video-small" src="./videos/starbucks.mp4" controls></video>
+            <button class="expandir-btn-starbucks" onclick="abrirLightbox(this)">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6ee7b7" stroke-width="2.5">
+                    <path
+                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+                </svg>
+                ampliar
+            </button>
 
-    <div class="lightbox" id="lightbox" onclick="fecharVideo()">
-        <video id="video-full" src="./videos/starbucks.mp4" controls></video>
+            <h2 class="titulo-starbucks">Projeto Starbucks</h2>
+
+            <p>Fiz esse Front-End do Starbucks na pandemia, vendo vídeos e aprendendo sobre desenvolvimento web.</p>
+
+        </div>
+
+        <div class="lightbox" id="lightbox" onclick="fecharVideo()">
+            <video id="video-full" src="./videos/starbucks.mp4" controls></video>
+        </div>
+
+
+        <div class="video-pqn-bs aparecer">
+            <video id="video-small" src="./videos/brasa.mp4" controls></video>
+            <button class="expandir-btn-brasa" onclick="abrirLightbox(this)">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6ee7b7" stroke-width="2.5">
+                    <path
+                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+                </svg>
+                ampliar
+            </button>
+
+            <h2 class="titulo-brasa">Projeto Brasa</h2>
+
+            <p>Esse foi em parceria com um amigo no Ensino Médio, criamos esse Front-End responsivo para a hamburgueria
+                de nome Brasa, nome inventado por nós mesmos.</p>
+
+        </div>
+
+        <div class="lightbox" id="lightbox" onclick="fecharVideo()">
+            <video id="video-full" src="./videos/brasa.mp4" controls></video>
+        </div>
+
+        <div class="video-pqn-loading aparecer">
+
+            <video class="video-loading" autoplay muted loop playsinline>
+                <source src="./videos/loading.mp4" type="video/mp4">
+            </video>
+
+            <h2 class="titulo-loading">Carregando projeto Empresarial...</h2>
+
+
+        </div>
+
     </div>
 
 </body>

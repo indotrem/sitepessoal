@@ -6,20 +6,22 @@ toggle.addEventListener("change", function () {
     
 });
 
-function abrirLightbox() {
-  const lightbox = document.getElementById('lightbox');
-  const vSmall = document.getElementById('video-small');
-  const vFull = document.getElementById('video-full');
-  lightbox.classList.add('ativo');
-  vFull.currentTime = vSmall.currentTime;
-  vFull.play();
+function abrirLightbox(botao) {
+    const container = botao.parentElement;
+    const videoPequeno = container.querySelector("video");
+
+    // pega o PRIMEIRO lightbox da página
+    const lightbox = document.querySelector(".lightbox");
+    const videoGrande = lightbox.querySelector("video");
+
+    videoGrande.src = videoPequeno.src;
+    lightbox.style.display = "flex";
 }
 
 function fecharVideo() {
-  const lightbox = document.getElementById('lightbox');
-  const vSmall = document.getElementById('video-small');
-  const vFull = document.getElementById('video-full');
-  lightbox.classList.remove('ativo');
-  vSmall.currentTime = vFull.currentTime;
-  vFull.pause();
+    const lightbox = document.querySelector(".lightbox");
+    const video = lightbox.querySelector("video");
+
+    video.pause();
+    lightbox.style.display = "none";
 }
